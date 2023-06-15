@@ -48,6 +48,35 @@ input {
     outline: none;
 }
 
+.block {
+    position: relative;
+    font-family: monospace;
+}
+
 .pass {
     margin-top: 30px;
+    background-color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.copied {
+    position: absolute;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    top: 12px;
+    right: -100px;
+    color: #818181;
+}
+
+.copied.active {
+    display: block;
+}
+
+#test {
+    width: 200px;
 }
