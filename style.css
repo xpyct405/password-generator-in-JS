@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #cecece;
+    background: linear-gradient(311deg, rgb(203, 180, 90), rgb(117, 208, 151));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,9 +18,15 @@ button {
     border: none;
     border-radius: 4px;
     background-color: rebeccapurple;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .4);
     color: white;
     cursor: pointer;
-    flex: 1 1 1;
+    font-family: monospace;
+    transition: transform .1s linear;
+}
+
+button:active {
+    transform: translate(2px, 2px);
 }
 
 .options {
@@ -33,15 +39,16 @@ button {
 label {
     display: flex;
     flex-direction: row;
-}
-
-label p {
-    padding-right: 20px;
+    text-align: left;
 }
 
 /* #nums-quantity {}
 
 #nums-abc {} */
+
+label input {
+    margin-left: 10px;
+}
 
 input {
     width: 40px;
@@ -57,8 +64,15 @@ input {
     margin-top: 30px;
     background-color: #fff;
     padding: 10px 30px;
+    min-width: 145px;
+    text-align: center;
     cursor: pointer;
     border-radius: 8px;
+    transition: background-color .2s ease-in-out;
+}
+
+.pass:active {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .copied {
@@ -71,6 +85,7 @@ input {
     top: 12px;
     right: -100px;
     color: #818181;
+    user-select: none;
 }
 
 .copied.active {

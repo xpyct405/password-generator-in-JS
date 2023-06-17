@@ -58,4 +58,4 @@ pass.addEventListener('click', () => {
 
     // Метод ниже копирует содержимое pass.innerText в буфер обмена
     navigator.clipboard.writeText(pass.innerText)
-})
+}) 
